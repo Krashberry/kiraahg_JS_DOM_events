@@ -24,3 +24,14 @@ let clickMe = document.getElementById("clickMe");
 document.addEventListener("click", function() {
   clickMe.innerText = 'You clicked me!'
 });
+
+// let randomColorBtn = document.getElementById("randomColorBtn");
+// document.addEventListener("click", function(randomColorBtn) {
+//   var randomColorBtn = Math.floor(Math.random()*16777215).toString(16)
+// });
+
+function changeBtnStyle() {
+  const btn = document.querySelector(".cool-btn")
+  btn.classList.toggle("glow"); // Toggles glow effect
+ }
+ 
