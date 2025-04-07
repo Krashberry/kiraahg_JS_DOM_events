@@ -21,15 +21,6 @@ document.addEventListener("click", function () {
   clickMe.innerText = "You clicked me!";
 });
 
-// function randomColorBtn() {
-//   document
-//     .getElementById("randomColorBtn")
-//     .addEventListener("click", function () {
-//       let randomColorBtn = Math.floor(Math.random() * 16777215).toString(16);
-//       return randomColorBtn;
-//     });
-// }
-
 function getRandomColor() {
   let letters = "0123456789ABCDEF";
   let color = "#";
