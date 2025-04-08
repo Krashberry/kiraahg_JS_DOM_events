@@ -37,3 +37,32 @@ function randomColorBtn() {
       document.body.style.backgroundColor = getRandomColor();
     });
 }
+
+function changeBtnStyle() {
+  const btn = document.querySelector(".cool-btn");
+  btn.classList.toggle("glow"); // Toggles glow effect
+}
+
+// let dark = document.getElementById("dark-mode");
+// dark.addEventListener("click", changeLighting);
+
+// function changeLighting() {
+//   document
+//     .getElementById("changeLighting")
+//     .addEventListener("click", function () {
+//       const btn = document.querySelector("body").classList.toggle("dark-btn");
+//     });
+// }
+
+let darkBackground = document.getElementById("dark-btn");
+darkBackground.addEventListener("click", darkMode);
+
+function darkMode() {
+  document.querySelector("body").classList.toggle("dark-btn");
+
+  if (darkBackground.innerText === "dark mode") {
+    darkBackground.innerText = "light mode";
+  } else if (darkBackground.innerText === "light mode") {
+    darkBackground.innerText = "dark mode";
+  }
+}
